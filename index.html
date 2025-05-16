@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RipBench: Unified Rip Current Benchmark for Classification, Detection and Segmentation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>RipBench</h1>
+        <p>Unified Benchmark for Rip Current Detection and Segmentation</p>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#dataset">Dataset</a></li>
+            <li><a href="#benchmarks">Benchmarks</a></li>
+            <li><a href="#results">Results</a></li>
+            <li><a href="#history">History</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#about">About</a></li>
+        </ul>
+    </nav>
+    <div class="container" id="home">
+        <h2>Welcome to RipBench</h2>
+        <p>
+            RipBench is the first comprehensive, multi-task benchmark for rip current analysis, supporting classification, object detection, oriented bounding box detection, semantic segmentation, instance segmentation, and panoptic segmentation (coming soon).
+        </p>
+        <p>
+            The benchmark includes <strong>300 videos</strong> (equally balanced between rip and non-rip events), totaling <strong>291,946 frames</strong> and approximately <strong>2 hours and 36 minutes of footage</strong> collected from diverse global coastlines. All tasks are supported with carefully curated annotations and evaluated using standard and safety-critical metrics, with a focus on the <strong>F<sub>2</sub></strong> score to prioritize recall in this high-risk domain.
+        </p>
+        <p>
+            RipBench provides a unified, balanced dataset along with baseline models and evaluation code, enabling real-world progress in automated beach monitoring and early warning systems.
+        </p>
+
+        <p>
+            The full dataset, baseline models, and results are released for review and will be made completely public soon. Stay tuned! Check the <a href="#history">History page</a> for timeline updates.
+        </p>
+        <p>
+            Contact: <a href="mailto:hidden.for.review">hidden.for.review</a>
+        </p>
+    </div>
+    <footer>
+        © 2025 RipBench Team
+    </footer>
+
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
