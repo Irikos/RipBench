@@ -5,48 +5,63 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="RipBench is a unified multi-task benchmark for rip current detection, submitted for review in 2026.">
     <title>RipBench: A Unified Multi-Task Benchmark for Rip Current Detection</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./style.css?v=20260518-visual">
 </head>
 <body>
-    <main class="page">
-        <header class="paper-header">
-            <p class="venue">2026 Submission Under Review</p>
-            <h1>RipBench: A Unified Multi-Task Benchmark for Rip Current Detection</h1>
-            <p class="authors">Anonymous authors</p>
-            <p class="notice">
-                This page is a placeholder while the submission is under review. Dataset downloads,
-                code, pretrained baselines, evaluation scripts, and project links are intentionally
-                withheld until release is permitted.
+    <header class="hero">
+        <div class="hero__content">
+            <p class="eyebrow">2026 Submission Under Review</p>
+            <h1>RipBench</h1>
+            <p class="subtitle">A unified multi-task benchmark for rip current detection</p>
+            <p class="lede">
+                Controlled evaluation across classification, detection, oriented detection,
+                instance segmentation, semantic segmentation, and panoptic segmentation on the
+                same coastal video corpus.
             </p>
-            <div class="resource-row" aria-label="Resource status">
-                <span>Paper pending</span>
-                <span>Dataset pending</span>
-                <span>Code pending</span>
-                <span>Models pending</span>
+            <div class="status-card">
+                <span class="status-dot" aria-hidden="true"></span>
+                <span>Placeholder page while the submission is under review. Public resources are intentionally withheld.</span>
             </div>
-        </header>
+        </div>
 
-        <section class="summary-grid" aria-label="Benchmark summary">
-            <div>
-                <strong>304</strong>
-                <span>videos</span>
+        <div class="hero__visual" aria-label="Stylized benchmark visualization">
+            <div class="shoreline">
+                <span class="rip rip-one"></span>
+                <span class="rip rip-two"></span>
+                <span class="rip rip-three"></span>
             </div>
-            <div>
-                <strong>303,491</strong>
-                <span>frames</span>
+            <div class="annotation annotation-box"></div>
+            <div class="annotation annotation-mask"></div>
+            <div class="annotation annotation-axis"></div>
+            <div class="visual-caption">classification -> boxes -> masks -> panoptic</div>
+        </div>
+    </header>
+
+    <main>
+        <section class="stats" aria-label="Dataset summary">
+            <div class="stat">
+                <span class="stat__value">304</span>
+                <span class="stat__label">videos</span>
             </div>
-            <div>
-                <strong>6</strong>
-                <span>vision tasks</span>
+            <div class="stat">
+                <span class="stat__value">303,491</span>
+                <span class="stat__label">frames</span>
             </div>
-            <div>
-                <strong>F<sub>2</sub></strong>
-                <span>safety-critical focus</span>
+            <div class="stat">
+                <span class="stat__value">6</span>
+                <span class="stat__label">vision tasks</span>
+            </div>
+            <div class="stat">
+                <span class="stat__value">F<sub>2</sub></span>
+                <span class="stat__label">recall-focused metric</span>
             </div>
         </section>
 
-        <section class="content-section">
-            <h2>Abstract</h2>
+        <section class="paper-card">
+            <div class="section-heading">
+                <p class="section-kicker">Paper Abstract</p>
+                <h2>Unified evaluation for beach-safety vision</h2>
+            </div>
             <p>
                 Rip currents are a serious and often under-addressed threat to beach safety, and the
                 leading cause of coastal drownings worldwide. They are difficult to detect due to
@@ -78,31 +93,40 @@
             </p>
         </section>
 
-        <section class="content-section">
-            <h2>Benchmark Tasks</h2>
-            <ul class="task-list">
-                <li>Image-level rip current classification</li>
-                <li>Axis-aligned object detection</li>
-                <li>Oriented object detection</li>
-                <li>Instance segmentation</li>
-                <li>Semantic segmentation</li>
-                <li>Panoptic segmentation</li>
-            </ul>
+        <section class="split-section">
+            <div>
+                <p class="section-kicker">Benchmark Scope</p>
+                <h2>Same data, multiple levels of visual abstraction</h2>
+                <p>
+                    RipBench is designed to compare coarse recognition with precise spatial
+                    localization under realistic beach-monitoring conditions. Each task uses shared
+                    data splits so model behavior can be compared directly across abstraction levels.
+                </p>
+            </div>
+            <div class="task-grid" aria-label="Supported tasks">
+                <span>Classification</span>
+                <span>Object Detection</span>
+                <span>Oriented Detection</span>
+                <span>Instance Segmentation</span>
+                <span>Semantic Segmentation</span>
+                <span>Panoptic Segmentation</span>
+            </div>
         </section>
 
-        <section class="content-section release">
-            <h2>Release Status</h2>
+        <section class="release-panel">
+            <p class="section-kicker">Release Status</p>
+            <h2>Materials withheld during review</h2>
             <p>
-                Public materials are temporarily withheld for anonymous review. This placeholder will
-                be replaced with the full RipBench project page once the review process allows public
-                release of the benchmark, baselines, and evaluation resources.
+                Dataset downloads, code, pretrained baselines, evaluation scripts, leaderboards, and
+                project links are not listed yet. This page will remain a minimal public placeholder
+                until the review process allows the benchmark release.
             </p>
         </section>
-
-        <footer>
-            <span>RipBench Team</span>
-            <span>2026</span>
-        </footer>
     </main>
+
+    <footer>
+        <span>RipBench Team</span>
+        <span>&copy; 2026</span>
+    </footer>
 </body>
 </html>
